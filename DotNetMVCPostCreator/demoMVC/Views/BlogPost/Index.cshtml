@@ -1,0 +1,14 @@
+﻿<div>
+  @{
+      using (Html.BeginForm("BlogPostForm", "BlogPost"))
+      {
+          @Html.Label("Title")
+          @Html.TextBox("title")
+          <br/>
+          @Html.Label("Post")
+          @Html.TextArea("blogpost",null,5,40,null)
+          <br/>
+          <input class="btn" type="submit" value="submit"/>
+      }
+  }
+</div>
